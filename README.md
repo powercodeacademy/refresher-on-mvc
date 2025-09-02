@@ -7,9 +7,9 @@ it.
 
 ## Objectives
 
-1.  List advantages created by compartmentalizing an application's functionality
-2.  Identify model-view-controller roles within a simplified example
-3.  Identify model-view-controller roles within Rails' implementation of the paradigm
+1. List advantages created by compartmentalizing an application's functionality
+2. Identify model-view-controller roles within a simplified example
+3. Identify model-view-controller roles within Rails' implementation of the paradigm
 
 ## Foreword
 
@@ -51,17 +51,17 @@ application:
 Now that we have identified the core components, let's examine what they
 actually do when a user engages with our web application:
 
-1.  A user, through interaction with the `view`, (in this case, the browser's GUI),
+1. A user, through interaction with the `view`, (in this case, the browser's GUI),
     requests data (clicks on a link, submits a form, enters a URL in the browser's
-    bar
-2.  The request is sent across the internet to the server
-3.  The `controller` (_which does not change data itself!_) asks the `model` to
+    bar)
+2. The request is sent across the internet to the server
+3. The `controller` (_which does not change data itself!_) asks the `model` to
     either provide it data (which it will send) or to change model-held data
     depending on the user's request
-4.  The `model` accesses/manipulates the actual 1's and 0's held on the server's
+4. The `model` accesses/manipulates the actual 1's and 0's held on the server's
     database and returns the desired result to the `controller`
-5.  The `controller` packs the response and sends it back to the client
-6.  The `view` (on the originating client's machine) _presents_ the data for the
+5. The `controller` packs the response and sends it back to the client
+6. The `view` (on the originating client's machine) _presents_ the data for the
     user
 
 In considering the above steps, try to answer the following question:
@@ -71,7 +71,7 @@ In considering the above steps, try to answer the following question:
   anything but a virtual copy of the _actual_ data a user perceives they are
   interacting with?
 
-#### An Advantage of Modularity
+### An Advantage of Modularity
 
 Earlier in this README, we said that we would practice thinking like a
 "software architect". Let's pursue that further. Imagine that the system we
@@ -97,7 +97,7 @@ account data while you view and manipulate it with 21st century technology.
 
 ## Quick Recap
 
-#### MVC is designed to:
+### MVC is designed to
 
 - Be language- and application- agnostic
 - Be modular: every part is distinct, encapsulated, and can be replaced without
@@ -118,7 +118,7 @@ Avi's implementation. Is mine less correct? Is his less correct? There's room
 for intelligent discourse and discovery of what's appropriate to the
 constraints.
 
-#### Rails MVC Implementation
+### Rails MVC Implementation
 
 The `controller` and `model` implementations in Rails are straightforward to align with our understanding of MVC.
 
